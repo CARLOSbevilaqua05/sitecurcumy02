@@ -1,0 +1,207 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&family=Jaro:opsz@6..72&family=Rubik+Wet+Paint&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+
+:root{
+  --cor0:#c5ebd6;
+  --cor01:#83d1ad;
+  --cor02:#3ddc84;
+  --cor03:#2fa866;
+  --cor04:#1a5c37;
+  --cor05:#063d1e;
+   --fonte-padrao:Arial, Verdana, Helvetica, "Bebas Neue", sans-serif;
+   --fonte-destaque: "Jaro,sans-serif" ;
+   --fonte-android:"Protest Strike", sans-serif;
+   }
+
+body {
+  background-image: linear-gradient(to bottom, var(--cor01),var(--cor03));
+   
+}
+
+
+
+
+nav{
+  background-color: var(--cor05);
+  padding: 10px;
+  box-shadow: 0px 7px 9px black;
+}
+
+nav > a {
+  color:var(--cor01);
+  font-family: var(--fonte-android);
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px ;
+  font-weight: bold;
+  margin-bottom: 30px;
+ 
+} 
+
+nav > a:hover{
+  background-color: var(--cor01);
+  color: var(--cor05);
+}
+
+
+
+
+header {
+  text-align: center;
+  background-color: var(--cor03);
+  margin: 10px;
+  padding: 15px;
+  font-family: var(--fonte-destaque);
+  border-radius: 9px 9px;
+  color: #aaff0081;
+  background-image: linear-gradient(to bottom, var(--cor03),var(--cor05));
+
+
+}
+
+
+header > p{
+         font-family: var(--fonte-android);
+         color: #aaff0081;
+         font-size: 1em;
+}
+h1{
+font-family: var(--fonte-android);
+}
+
+
+article{
+  font-family: var(--fonte-android);
+  text-align: center;
+  margin: 5px;
+  font-size: 1em;
+
+}
+p{
+  text-align: center;
+  font-family: var(--fonte-android);
+  padding: 10px;
+}
+
+img {
+  width: 100%;
+  max-width: 650px;
+  border-radius: 10px 10px;
+  display: block;
+  margin: auto;
+  box-shadow: #063d1e 4px 4px 4px 4px;
+
+}
+
+
+
+
+ul{
+  font-family: var(--fonte-android);
+}
+
+p.oi{
+  font-family: var(--fonte-android);
+}
+
+.full-screen-background {
+  /* Define a cor de fundo da tela cheia */
+  position: fixed;
+  top: 0;
+  left: 1101;
+  width: 50%;
+  height: 50vh;
+  background-color: var(--cor01); /* Usando a variável de cor definida */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.botao {
+  /* Estilo do botão */
+  background-color: rgb(255, 0, 0); /* Usando a variável de cor definida */
+  color: #240000;
+  font-family:var(--fonte-android);
+  padding: 10px 20px; /* Increased padding */
+  border: none;
+  border-radius: 40px; /* Increased border radius */
+  cursor: pointer;
+  font-size: 18px; /* Increased font size */
+  text-align: center;
+  position: relative;
+  transition: 0.3s; /* Adiciona transição suave */
+  width: 120px; /* Increased width */
+  height: 40px; /* Increased height */
+  margin: auto; /* Add margin auto to center horizontally */}
+
+
+
+
+.botao {
+  animation: pulse 1s infinite; /* Animação de pulso */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.botao::before {
+  /* Efeito de brilho no botão */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background-color: var(--cor02); /* Usando a variável de cor definida */
+  border-radius: 530px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.botao:hover::before {
+  /* Animação do brilho ao passar o mouse */
+  opacity: 0.5;
+  transform: scale(1.1);
+}
+
+
+#oi{
+    padding: 10px;
+   
+  }
+
+  h2{
+    
+    padding: 20px;
+    text-align: center;
+    font-family: var(--fonte-android);
+  }
+  .video-container {
+    text-align: center; 
+  }
+
+  .video-container video {
+    display: inline-block; 
+    margin: 20px; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+
+ footer{
+  
+ }
